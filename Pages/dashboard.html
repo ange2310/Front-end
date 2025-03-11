@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dashboard</title>
+
+    <!-- AdminLTE CSS -->
+    <link rel="stylesheet" href="../Templates/adminlte/dist/css/adminlte.min.css">
+    <!-- FontAwesome para íconos -->
+    <link rel="stylesheet" href="../Templates/adminlte/plugins/fontawesome-free/css/all.min.css">
+
+    <!-- Tu propio CSS -->
+    <link rel="stylesheet" href="../Styles/styles.css">
+</head>
+<body class="hold-transition sidebar-mini">
+    <div class="wrapper">
+        
+        <!-- Navbar -->
+        <nav class="main-header navbar navbar-expand navbar-white navbar-light">
+            <ul class="navbar-nav">
+                <li class="nav-item">
+                    <a class="nav-link" data-widget="pushmenu" href="#" role="button"><i class="fas fa-bars"></i></a>
+                </li>
+                <li class="nav-item d-none d-sm-inline-block">
+                    <a href="#" class="nav-link">Inicio</a>
+                </li>
+            </ul>
+        </nav>
+
+        <!-- Sidebar -->
+        <aside class="main-sidebar sidebar-dark-primary elevation-4">
+            <a href="#" class="brand-link">
+                <span class="brand-text font-weight-light">Mi Dashboard</span>
+            </a>
+            <div class="sidebar">
+                <nav class="mt-2">
+                    <ul class="nav nav-pills nav-sidebar flex-column" data-widget="treeview" role="menu">
+                        <li class="nav-item">
+                            <a href="dashboard.html" class="nav-link">
+                                <i class="nav-icon fas fa-tachometer-alt"></i>
+                                <p>Dashboard</p>
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="productos.html" class="nav-link">
+                                <i class="nav-icon fas fa-box"></i>
+                                <p>Productos</p>
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="tareas.html" class="nav-link">
+                                <i class="nav-icon fas fa-tasks"></i>
+                                <p>Tareas</p>
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="#" class="nav-link text-danger" onclick="cerrarSesion()">
+                                <i class="nav-icon fas fa-sign-out-alt"></i>
+                                <p>Cerrar Sesión</p>
+                            </a>
+                        </li>
+                    </ul>
+                </nav>
+            </div>
+        </aside>
+
+        <!-- Contenido Principal -->
+        <div class="content-wrapper">
+            <section class="content">
+                <div class="container-fluid">
+                    <h1>Bienvenido al Dashboard</h1>
+
+                    <!-- Sección de Resumen -->
+                    <div class="row mt-4">
+                        <div class="col-lg-6 col-6">
+                            <div class="small-box bg-primary">
+                                <div class="inner">
+                                    <h3>10</h3>
+                                    <p>Productos</p>
+                                </div>
+                                <div class="icon">
+                                    <i class="fas fa-box"></i>
+                                </div>
+                                <a href="productos.html" class="small-box-footer">Ver detalles <i class="fas fa-arrow-circle-right"></i></a>
+                            </div>
+                        </div>
+
+                        <div class="col-lg-6 col-6">
+                            <div class="small-box bg-warning">
+                                <div class="inner">
+                                    <h3>2</h3>
+                                    <p>Tareas</p>
+                                </div>
+                                <div class="icon">
+                                    <i class="fas fa-tasks"></i>
+                                </div>
+                                <a href="tareas.html" class="small-box-footer">Ver detalles <i class="fas fa-arrow-circle-right"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </div>
+
+    <!-- jQuery y AdminLTE JS -->
+    <script src="../Templates/adminlte/jquery/jquery.min.js"></script>
+    <script src="../Templates/adminlte/plugins/bootstrap/js/bootstrap.bundle.min.js"></script>
+    <script src="../Templates/adminlte/dist/js/adminlte.min.js"></script>
+    <script src="../Logica Front/dashboard.js"></script>
+
+    <!-- Script de Cerrar Sesión -->
+    <script>
+        function cerrarSesion() {
+            if (confirm("¿Seguro que quieres cerrar sesión?")) {
+                localStorage.removeItem("usuario"); // Elimina datos de sesión
+                window.location.href = "/login.html"; // Redirige a la página de login
+            }
+        }
+    </script>
+</body>
+</html>

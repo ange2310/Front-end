@@ -1,0 +1,126 @@
+/* ======== Estilos Generales ======== */
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #f4f6f9;
+}
+
+/* ======== Navbar ======== */
+.navbar {
+    background-color: #343a40 !important;
+    color: white !important;
+}
+
+.navbar a {
+    color: white !important;
+}
+
+.navbar a:hover {
+    color: #f8d210 !important;
+}
+
+/* ======== Sidebar ======== */
+.main-sidebar {
+    background-color: #222d32 !important;
+}
+
+.brand-link {
+    text-align: center;
+    font-size: 18px;
+    font-weight: bold;
+    color: white !important;
+}
+
+.brand-link:hover {
+    color: #f8d210 !important;
+}
+
+.nav-sidebar .nav-item .nav-link {
+    color: white !important;
+}
+
+.nav-sidebar .nav-item .nav-link:hover {
+    background-color: #1a2226 !important;
+    color: #f8d210 !important;
+}
+
+/* ======== Tarjetas de Resumen ======== */
+.small-box {
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    transition: transform 0.2s ease-in-out;
+}
+
+.small-box:hover {
+    transform: scale(1.05);
+}
+
+.small-box .inner h3 {
+    font-size: 30px;
+    font-weight: bold;
+}
+
+.small-box .inner p {
+    font-size: 16px;
+}
+
+/* ======== Contenido Principal ======== */
+.content-wrapper {
+    padding: 20px;
+}
+
+/* ======== Tablas ======== */
+table {
+    width: 100%;
+    background-color: white;
+    border-collapse: collapse;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+thead {
+    background-color: #343a40;
+    color: white;
+}
+
+th, td {
+    padding: 12px;
+    text-align: left;
+    border-bottom: 1px solid #ddd;
+}
+
+tbody tr:hover {
+    background-color: #f1f1f1;
+}
+
+/* ======== Botones ======== */
+.btn-primary {
+    background-color: #007bff !important;
+    border-color: #007bff !important;
+}
+
+.btn-primary:hover {
+    background-color: #0056b3 !important;
+}
+
+.btn-danger {
+    background-color: #dc3545 !important;
+    border-color: #dc3545 !important;
+}
+
+.btn-danger:hover {
+    background-color: #a71d2a !important;
+}
+
+/* ======== Modales ======== */
+.modal-content {
+    border-radius: 10px;
+}
+
+.modal-header {
+    background-color: #343a40;
+    color: white;
+}
+
+/* ======== Footer ======== */
+.main-footer {
+    margin-top: auto;
+}
